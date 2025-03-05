@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>个人头像</title>
+  
+    <link rel="icon" href="image/logo.png"> 
+    <style type="text/css">
+
+        body{
+            background:url("image/backg1.png") no-repeat center center fixed;
+            background-size: cover;
+
+        }
+
+        div.main{
+            width: 300px;
+            height: 500px;
+            border: 3px rgba(0,0,0,.05) solid ;
+            position: absolute;
+            top:10%;
+            left:40%;
+            background-color: rgba(154, 151, 151, 0.7);
+        }
+        
+        .auto{
+            margin: auto;
+            text-align: center;            
+        }
+
+        img{
+            position: relative;
+            top: 20%;
+            width: 180px;
+            height: 180px;
+            border: white 2px solid;
+            border-radius: 1000px;
+            object-fit: cover;
+            cursor: pointer;
+
+        }
+
+        img:hover{
+            width: 200px;
+            height: 200px;
+            border: aqua 2px solid;
+        }
+
+        p{
+            top: 25%;
+            position: relative;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        p:hover{
+            color: aqua;
+        }
+
+    </style>
+    </head>
+    
+    <body>
+        <div class="main auto">
+            <img class="auto" alt="头像" src="image/me.jpg" onclick="to2()">
+            <p id="name" onclick="to2()">
+                姓名：周祎杰
+                <br>学号:2405090444
+            </p>
+            
+        </div>
+    </body>
+<script>
+function to2(){
+    window.location.href = "3.html";
+}
+
+</script>
+</html>
